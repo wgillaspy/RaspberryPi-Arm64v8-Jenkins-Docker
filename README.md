@@ -5,8 +5,14 @@
 
 Please use at your own risk.  At minimum, I'd suggest comparing this project and the official project to understand the differences.
 
+#### Pull from latest directly from docker:  
+docker pull williamgillaspy/arm64v8jenkins
+docker run -d  -p 8080:8080 --mount type=bind,source=/mnt/fileshare/jenkins,target=/var/jenkins_home williamgillaspy/arm64v8jenkins
+
+
+##### Build it and run it yourself:
 Example build command:  
-- docker build . -t arm/jenkins:latest  
+- docker build . -t arm64v8/jenkins:latest  
 
 Example run command:  
-- docker run -d  -p 8080:8080 --mount type=bind,source=/mnt/fileshare/jenkins,target=/var/jenkins_home arm/jenkins:latest
+- docker run -d  -p 8080:8080 --mount type=bind,source=/mnt/fileshare/jenkins,target=/var/jenkins_home arm64v8/jenkins:latest
