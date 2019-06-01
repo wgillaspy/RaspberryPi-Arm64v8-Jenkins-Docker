@@ -1,4 +1,4 @@
-# RaspberryPi-Jenkins-Docker
+# RaspberryPi-Arm64v8-Jenkins-Docker
 
 ## This is a Jenkins Docker image that will run on a Raspberry Pi running the Ubuntu 64bit arm distribution.
 #### The image is based on the official Jenkins Docker project:  https://github.com/jenkinsci/docker
